@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 60%);
+  margin-top: 20vh;
+  max-width: 500px;
+  width: 92%;
+}
+
+#headline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid #f6f6f6;
+  padding: 5px 20px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+i {
+  font-size: 15px;
+  opacity: 0.3;
+}
+
+i:hover,
+input:hover {
+  cursor: pointer;
+}
+
+#new-input {
+  font-size: 15px;
+  border: 1px solid #f6f6f6;
+  padding: 12px 20px;
+  outline: none;
+}
+
+#new-input::placeholder {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+#todo-list {
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #f6f6f6;
+  box-sizing: border-box;
+  padding: 12px 20px;
+}
+
+div.label-container {
+  display: flex;
+  gap: 5px;
+}
+
+div input.to-do {
+  font-size: 15px;
+  font-weight: 300;
+  font-family: inherit;
+  outline: none;
+  border: none;
+}
+
+#clear-completed {
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  padding: 18px;
+  opacity: 0.5;
+  width: 100%;
+}
+
+.checked .label-container {
+  opacity: 0.5;
+}
+
+.checked .to-do {
+  text-decoration: line-through;
+}
